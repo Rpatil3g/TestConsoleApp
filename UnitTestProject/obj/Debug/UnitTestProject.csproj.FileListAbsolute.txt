@@ -1,0 +1,16 @@
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\bin\Debug\SamplePro.exe
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\bin\Debug\SamplePro.pdb
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\obj\Debug\UnitTestProject.csprojAssemblyReference.cache
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\Rohit\source\repos\SampleProSln\UnitTestProject\obj\Debug\UnitTestProject.pdb
