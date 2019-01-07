@@ -36,7 +36,7 @@ namespace UnitTestProject
             //Sample sp = new Sample();
             int result = 11;//sp.AddTwoNo(6, 5);
             string[] lines = { "Run id:" + Convert.ToString(_testContext.Properties["__Tfs_TestRunId__"]) + " in add two " + DateTime.Now.ToString() };           
-            System.IO.File.AppendAllLines(@"C:\AgentAzure\agentWork\WriteLines.txt", lines);
+            System.IO.File.AppendAllLines(@"C:\AgentOnAzure2\agentWork\WriteLines.txt", lines);
 
             Assert.AreEqual(11, result);
         }
@@ -53,7 +53,7 @@ namespace UnitTestProject
 
             //Sample sp = new Sample();
             string[] lines = {  "Run id:" + runid + " in Divide " + DateTime.Now.ToString() };        
-            System.IO.File.AppendAllLines(@"C:\AgentAzure\agentWork\WriteLines.txt", lines);
+            System.IO.File.AppendAllLines(@"C:\AgentOnAzure2\agentWork\WriteLines.txt", lines);
             int result = 11;//sp.AddTwoNo(6, 5);
             Assert.AreEqual(11, result);
         }
