@@ -49,8 +49,9 @@ namespace UnitTestProject
 
             }
 
+            throw(new Exception("in TestMethod_DivideTwoNo"));
             string runid =Convert.ToString(_testContext.Properties["currentrunid"]);
-Console.WriteLine(" TestMethod_DivideTwoNo run id by runsetting is : " + runid);
+            Console.WriteLine(" TestMethod_DivideTwoNo run id by runsetting is : " + runid);
             //Sample sp = new Sample();
             string[] lines = {  "Run id:" + runid + " in Divide " + DateTime.Now.ToString() };        
             System.IO.File.AppendAllLines(@"C:\AgentOnAzure2\agentWork\WriteLines.txt", lines);
