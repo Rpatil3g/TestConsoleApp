@@ -44,10 +44,10 @@ namespace UnitTestProject
         [TestMethod]
         public void TestMethod_DivideTwoNo()
         {
-            for (Int64 i = 0; i < 10000000; i++)
-            {
+           //for (Int64 i = 0; i < 10000000; i++)
+            //{
 
-            }
+            //}
 
             throw(new Exception("in TestMethod_DivideTwoNo"));
             string runid =Convert.ToString(_testContext.Properties["currentrunid"]);
