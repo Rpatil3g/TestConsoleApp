@@ -25,9 +25,9 @@ namespace ConnectTFS
                 getResponce(URL);
 
                 dynamic deseriliesJson = JsonConvert.DeserializeObject(this.jsonResponce);
-                string aa = deseriliesJson.value[0].id;
+                string aa = deseriliesJson;
 
-                return deseriliesJson.value[0].id;
+                return aa;
             }
             catch(Exception e)
             {
