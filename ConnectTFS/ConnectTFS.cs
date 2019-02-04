@@ -21,12 +21,10 @@ namespace ConnectTFS
         {
             try
             {
-
                 getResponce(URL);
-
                 dynamic deseriliesJson = JsonConvert.DeserializeObject(this.jsonResponce);
                 Console.WriteLine(deseriliesJson);
-                string aa = deseriliesJson.value;
+                string aa = deseriliesJson.value[0].id;
 
                 return aa;
             }
