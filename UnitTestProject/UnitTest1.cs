@@ -44,19 +44,19 @@ namespace UnitTestProject
         [TestMethod]
         public void TestMethod_DivideTwoNo()
         {
-           //for (Int64 i = 0; i < 10000000; i++)
-            //{
+        //    //for (Int64 i = 0; i < 10000000; i++)
+        //     //{
 
-            //}
+        //     //}
 
-            throw(new Exception("in TestMethod_DivideTwoNo"));
-            string runid =Convert.ToString(_testContext.Properties["currentrunid"]);
-            Console.WriteLine(" TestMethod_DivideTwoNo run id by runsetting is : " + runid);
-            //Sample sp = new Sample();
-            string[] lines = {  "Run id:" + runid + " in Divide " + DateTime.Now.ToString() };        
-            System.IO.File.AppendAllLines(@"C:\AgentOnAzure2\agentWork\WriteLines.txt", lines);
-            int result = 11;//sp.AddTwoNo(6, 5);
-            Assert.AreEqual(11, result);
+        //     throw(new Exception("in TestMethod_DivideTwoNo"));
+        //     string runid =Convert.ToString(_testContext.Properties["currentrunid"]);
+        //     Console.WriteLine(" TestMethod_DivideTwoNo run id by runsetting is : " + runid);
+        //     //Sample sp = new Sample();
+        //     string[] lines = {  "Run id:" + runid + " in Divide " + DateTime.Now.ToString() };        
+        //     System.IO.File.AppendAllLines(@"C:\AgentOnAzure2\agentWork\WriteLines.txt", lines);
+        //     int result = 11;//sp.AddTwoNo(6, 5);
+        //     Assert.AreEqual(11, result);
         }
     }
 }
