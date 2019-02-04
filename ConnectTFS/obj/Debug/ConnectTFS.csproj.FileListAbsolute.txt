@@ -4,3 +4,4 @@ F:\Rough\SampleTestPro\SampleProject\ConnectTFS\obj\Debug\ConnectTFS.csproj.Core
 F:\Rough\SampleTestPro\SampleProject\ConnectTFS\obj\Debug\ConnectTFS.csproj.CopyComplete
 F:\Rough\SampleTestPro\SampleProject\ConnectTFS\obj\Debug\ConnectTFS.dll
 F:\Rough\SampleTestPro\SampleProject\ConnectTFS\obj\Debug\ConnectTFS.pdb
+F:\Rough\SampleTestPro\SampleProject\ConnectTFS\obj\Debug\ConnectTFS.csprojAssemblyReference.cache

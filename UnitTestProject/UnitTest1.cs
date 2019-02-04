@@ -29,7 +29,7 @@ namespace UnitTestProject
         {
             _tfsURL += _testContext.Properties["builduri"];
             string[] strArray = new string[2];
-           string runIdResponse = conTFS.GetBuildDependentRunId(_tfsURL);
+           string runIdResponse = conTFS.GetBuildDependentRunId(_tfsURL).ToString();
             strArray[0] = runIdResponse;
             strArray[1] = "";
             System.IO.File.AppendAllLines(@"C:\AgentOnAzure2\agentWork\WriteLines.txt", strArray);

@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,36 +14,22 @@ namespace ConnectTFS
     public class ConnectTFS
     {
         private static readonly HttpClient _Client = new HttpClient();
+        private string jsonResponce = string.Empty;
         //  private static JavaScriptSerializer _Serializer = new JavaScriptSerializer();
 
-       public  string GetBuildDependentRunId(string URL)
+        public string GetBuildDependentRunId(string URL)
         {
-            string retResponse = null;
-            try
-            {
-                string url = URL;
+           
 
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-                
-                request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+            getResponce(URL);
 
-                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
-                using (Stream stream = response.GetResponseStream())
-                using (StreamReader reader = new StreamReader(stream))
-                {
-                    retResponse= reader.ReadToEnd();
-                }
-
-            }
-            catch (Exception ex)
-            {
-                retResponse = ex.Message;
-            }
-
-            return retResponse;
+            dynamic deseriliesJson = JsonConvert.DeserializeObject(this.jsonResponce);
+           string aa = deseriliesJson.value[0].id;
+          
+            return deseriliesJson.value[0].id; 
         }
 
-      
+
         /// <summary>
         /// Makes an async HTTP Request
         /// </summary>
@@ -51,25 +38,42 @@ namespace ConnectTFS
         /// <param name="pJsonContent">String data to POST on the server</param>
         /// <param name="pHeaders">If you use some kind of Authorization you should use this</param>
         /// <returns></returns>
-        static async Task<HttpResponseMessage> Request(HttpMethod pMethod, string pUrl, string pJsonContent, Dictionary<string, string> pHeaders)
+        public  async void getResponce(string uri)
         {
-            var httpRequestMessage = new HttpRequestMessage();
-            httpRequestMessage.Method = pMethod;
-            httpRequestMessage.RequestUri = new Uri(pUrl);
-            foreach (var head in pHeaders)
+            string responseBody = ""; 
+            try
             {
-                httpRequestMessage.Headers.Add(head.Key, head.Value);
+                var personalaccesstoken = "rchud3hpendkhjjl7ylesg7a3n3ixyyucyzdfgtmcb37mpjxznqa";
+
+                using (HttpClient client = new HttpClient())
+                {
+                    client.DefaultRequestHeaders.Accept.Add(
+                        new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
+                        Convert.ToBase64String(
+                            System.Text.ASCIIEncoding.ASCII.GetBytes(
+                                string.Format("{0}:{1}", "", personalaccesstoken))));
+
+                    using (HttpResponseMessage response = client.GetAsync(
+                                uri).Result)
+                    {
+                        response.EnsureSuccessStatusCode();
+                         responseBody = await response.Content.ReadAsStringAsync();
+                        
+                        Console.WriteLine(responseBody);
+                    }
+                }
+
+                this.jsonResponce = responseBody;
             }
-            switch (pMethod.Method)
+            catch (Exception ex)
             {
-                case "GET":
-                    HttpContent httpContent = new StringContent(pJsonContent, Encoding.UTF8, "application/json");
-                   // httpRequestMessage.Content = httpContent;
-                    break;
-
+                this.jsonResponce = ex.Message;
+                Console.WriteLine(ex.ToString());
             }
 
-            return await _Client.SendAsync(httpRequestMessage);
+          
         }
     }
 }

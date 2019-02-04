@@ -40,3 +40,4 @@ F:\Rough\SampleTestPro\SampleProject\UnitTestProject\obj\Debug\UnitTestProject.d
 F:\Rough\SampleTestPro\SampleProject\UnitTestProject\obj\Debug\UnitTestProject.pdb
 F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\ConnectTFS.dll
 F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\ConnectTFS.pdb
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\Newtonsoft.Json.dll
