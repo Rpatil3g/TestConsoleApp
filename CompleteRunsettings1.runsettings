@@ -14,11 +14,11 @@
     <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
 
     <TreatTestAdapterErrorsAsWarnings>false</TreatTestAdapterErrorsAsWarnings>
-    
+
     <CollectSourceInformation>true</CollectSourceInformation>
-      
+
     <!-- Uncomment the below for settings test adapter paths , a semicolon seperated list-->
-      <!--  
+    <!--  
       <TestAdapterPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdapterPaths>
        -->
     <!-- 0 = As many processes as possible, limited by number of cores on machine, 1 = Sequential (1 process), 2-> Given number of processes up to limit by number of cores on machine-->
@@ -133,15 +133,16 @@ Included items must then not match any entries in the exclude list to remain inc
       </DataCollector>
     </DataCollectors>
   </DataCollectionRunSettings>
-  
-   
+
+
   <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="currentrunid" value="11" />
+    <Parameter name="builduri" value ="buildUri"/>
   </TestRunParameters>
- 
-  
+
+
   <!-- Adapter Specific sections -->
 
   <!-- MSTest adapter -->
@@ -150,14 +151,14 @@ Included items must then not match any entries in the exclude list to remain inc
     <CaptureTraceOutput>false</CaptureTraceOutput>
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
-      <!-- Uncomment and update path for assembly resolution  -->
-  <!--  <AssemblyResolution>    
+    <!-- Uncomment and update path for assembly resolution  -->
+    <!--  <AssemblyResolution>    
              <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
    </AssemblyResolution>  -->
   </MSTest>
-    
-    <!-- NUnit3 adapter, uncomment to set as appropriate, numeric, booleans, enums have their default values below, except RandomSeed -->
-    <!--
+
+  <!-- NUnit3 adapter, uncomment to set as appropriate, numeric, booleans, enums have their default values below, except RandomSeed -->
+  <!--
     <NUnit>
         <BasePath>D:\Dev\NUnit\nunit3-vs-adapter\demo\NUnitTestDemo\bin\Release</BasePath>
         <PrivateBinPath>extras;more.extras</PrivateBinPath>

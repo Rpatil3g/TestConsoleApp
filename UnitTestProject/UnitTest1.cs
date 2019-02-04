@@ -23,10 +23,7 @@ namespace UnitTestProject
         [TestInitialize]
         public void SetupTest()
         {
-            Console.WriteLine(
-                "TextContext.TestName='{0}'  static _testContext.TestName='{1}'  {2}",
-                TestContext.TestName,
-                _testContext.TestName, Convert.ToString(_testContext.Properties["__Tfs_TestRunId__"]) + "Rohit " + DateTime.Now.ToString());
+         
         }
 
         [TestMethod]
@@ -35,7 +32,7 @@ namespace UnitTestProject
 
             //Sample sp = new Sample();
             int result = 11;//sp.AddTwoNo(6, 5);
-            string[] lines = { "Run id:" + Convert.ToString(_testContext.Properties["__Tfs_TestRunId__"]) + " in add two " + DateTime.Now.ToString() };           
+            string[] lines = { "Run id:" + Convert.ToString(_testContext.Properties["currentrunid"])+" And BuildURI is: "  +_testContext.Properties["builduri"] + " in add two "+  DateTime.Now.ToString() };           
             System.IO.File.AppendAllLines(@"C:\AgentOnAzure2\agentWork\WriteLines.txt", lines);
 
             Assert.AreEqual(11, result);

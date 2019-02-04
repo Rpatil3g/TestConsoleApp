@@ -24,3 +24,17 @@ C:\Users\Rohit\source\repos\SampleProSln\newTestProject\UnitTestProject\bin\Debu
 C:\Users\Rohit\source\repos\SampleProSln\newTestProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Rohit\source\repos\SampleProSln\newTestProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\Rohit\source\repos\SampleProSln\newTestProject\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\UnitTestProject.dll
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\UnitTestProject.pdb
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\obj\Debug\UnitTestProject.csprojAssemblyReference.cache
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\obj\Debug\UnitTestProject.dll
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\obj\Debug\UnitTestProject.pdb
