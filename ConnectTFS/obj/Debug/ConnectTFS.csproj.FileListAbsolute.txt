@@ -1,0 +1,6 @@
+F:\Rough\SampleTestPro\SampleProject\ConnectTFS\bin\Debug\ConnectTFS.dll
+F:\Rough\SampleTestPro\SampleProject\ConnectTFS\bin\Debug\ConnectTFS.pdb
+F:\Rough\SampleTestPro\SampleProject\ConnectTFS\obj\Debug\ConnectTFS.csproj.CoreCompileInputs.cache
+F:\Rough\SampleTestPro\SampleProject\ConnectTFS\obj\Debug\ConnectTFS.csproj.CopyComplete
+F:\Rough\SampleTestPro\SampleProject\ConnectTFS\obj\Debug\ConnectTFS.dll
+F:\Rough\SampleTestPro\SampleProject\ConnectTFS\obj\Debug\ConnectTFS.pdb

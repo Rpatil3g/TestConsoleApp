@@ -139,7 +139,7 @@ Included items must then not match any entries in the exclude list to remain inc
     <Parameter name="webAppUrl" value="http://localhost" />
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="currentrunid" value="11" />
-    <Parameter name="builduri" value ="buildUri"/>
+    <Parameter name="builduri" value ="vstfs:///Build/Build/97"/>
   </TestRunParameters>
 
 

@@ -38,3 +38,5 @@ F:\Rough\SampleTestPro\SampleProject\UnitTestProject\obj\Debug\UnitTestProject.c
 F:\Rough\SampleTestPro\SampleProject\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
 F:\Rough\SampleTestPro\SampleProject\UnitTestProject\obj\Debug\UnitTestProject.dll
 F:\Rough\SampleTestPro\SampleProject\UnitTestProject\obj\Debug\UnitTestProject.pdb
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\ConnectTFS.dll
+F:\Rough\SampleTestPro\SampleProject\UnitTestProject\bin\Debug\ConnectTFS.pdb
