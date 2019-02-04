@@ -25,7 +25,8 @@ namespace ConnectTFS
                 getResponce(URL);
 
                 dynamic deseriliesJson = JsonConvert.DeserializeObject(this.jsonResponce);
-                string aa = deseriliesJson;
+                Console.WriteLine(deseriliesJson);
+                string aa = deseriliesJson.value;
 
                 return aa;
             }
