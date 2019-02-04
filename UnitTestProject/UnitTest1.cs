@@ -48,11 +48,7 @@ namespace UnitTestProject
             Assert.AreEqual(11, result);
         }
 
-        [TestMethod]
-        public void TestMethod_DivideTwoNo()
-        {
-        
-        }
+   
     }
 
 }
