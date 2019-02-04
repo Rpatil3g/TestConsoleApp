@@ -19,14 +19,20 @@ namespace ConnectTFS
 
         public string GetBuildDependentRunId(string URL)
         {
-           
+            try
+            {
 
-            getResponce(URL);
+                getResponce(URL);
 
-            dynamic deseriliesJson = JsonConvert.DeserializeObject(this.jsonResponce);
-           string aa = deseriliesJson.value[0].id;
-          
-            return deseriliesJson.value[0].id; 
+                dynamic deseriliesJson = JsonConvert.DeserializeObject(this.jsonResponce);
+                string aa = deseriliesJson.value[0].id;
+
+                return deseriliesJson.value[0].id;
+            }
+            catch(Exception e)
+            {
+                return e.Message;
+            }
         }
 
 
