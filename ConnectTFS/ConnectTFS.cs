@@ -43,7 +43,7 @@ namespace ConnectTFS
         /// <param name="pJsonContent">String data to POST on the server</param>
         /// <param name="pHeaders">If you use some kind of Authorization you should use this</param>
         /// <returns></returns>
-        public  async void getResponce(string uri)
+        public   void getResponce(string uri)
         {
             string responseBody = ""; 
             try
@@ -64,7 +64,7 @@ namespace ConnectTFS
                                 uri).Result)
                     {
                         response.EnsureSuccessStatusCode();
-                         responseBody = await response.Content.ReadAsStringAsync();
+                         responseBody =  response.Content.ReadAsStringAsync().Result;
                         
                         Console.WriteLine(responseBody);
                     }
