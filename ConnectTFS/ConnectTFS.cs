@@ -17,7 +17,7 @@ namespace ConnectTFS
         private string jsonResponce = string.Empty;
         //  private static JavaScriptSerializer _Serializer = new JavaScriptSerializer();
 
-        public string GetBuildDependentRunId(string URL)
+        public string GetRunIdUsingBuildNum(string URL)
         {
             try
             {
@@ -48,7 +48,11 @@ namespace ConnectTFS
             string responseBody = ""; 
             try
             {
-                var personalaccesstoken = "rchud3hpendkhjjl7ylesg7a3n3ixyyucyzdfgtmcb37mpjxznqa";
+                //this token for my localhost
+                //var personalaccesstoken = "rchud3hpendkhjjl7ylesg7a3n3ixyyucyzdfgtmcb37mpjxznqa";
+
+                //this for nikhil tfs 2018
+                var personalaccesstoken = "yfl3srrgettcxigddcmkdjsz5cgzx4onxd2wlrvzvk6ri34rrwcq";
 
                 using (HttpClient client = new HttpClient())
                 {

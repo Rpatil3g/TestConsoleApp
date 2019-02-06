@@ -11,7 +11,8 @@ namespace UnitTestProject
     {
         TestContext testContext;
 
-        string _tfsURL = "https://dev.azure.com/Rohitentc/TestConsoleApp/_apis/test/runs?buildUri=";
+        //string _tfsURL = "https://dev.azure.com/Rohitentc/TestConsoleApp/_apis/test/runs?buildUri=";
+        string _tfsURL = "http://10.0.0.11:8080/tfs/DefaultCollection/TestConsoleApp/_apis/test/runs?buildUri=";
         ConnectTFS.ConnectTFS conTFS = new ConnectTFS.ConnectTFS();
 
         public TestContext TestContext { get; set; }
@@ -29,7 +30,7 @@ namespace UnitTestProject
         {
             _tfsURL += _testContext.Properties["builduri"];
             string[] strArray = new string[2];
-           string runIdResponse = conTFS.GetBuildDependentRunId(_tfsURL).ToString();
+           string runIdResponse = conTFS.GetRunIdUsingBuildNum(_tfsURL).ToString();
             strArray[0] = runIdResponse;
             strArray[1] = _tfsURL;
             System.IO.File.AppendAllLines(@"C:\AgentOnAzure2\agentWork\WriteLines.txt", strArray);
